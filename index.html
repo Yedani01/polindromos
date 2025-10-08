@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversor de Notaciones</title>
+    <!-- <link rel="stylesheet" href="public/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="public/css/main.css"> -->
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="titulo-neon text-center">Conversor de Notaciones</h1>
+
+        <div class="input-card p-4">
+            <label for="expresion" class="form-label">Ingresa tu expresión infija:</label>
+            <div class="input-group">
+                <input type="text" id="expresion" class="form-control" placeholder="Ej: (2 + 4) / (10 * 1)">
+                <button id="convertir" class="btn-neon">Calcular</button>
+            </div>
+        </div>
+
+        <div class="cards-container">
+            <div class="card-neon border-infija">
+                <h4>Infija</h4>
+                <p><b>Expresión:</b> <span id="infija">-</span></p>
+                <p><b>Resultado:</b> <span id="res_infija">-</span></p>
+                <p class="tiempo">Tiempo: <span id="tiempo_ni">-</span></p>
+            </div>
+
+            <div class="card-neon border-prefija">
+                <h4>Prefija</h4>
+                <p><b>Expresión:</b> <span id="prefija">-</span></p>
+                <p><b>Resultado:</b> <span id="res_prefija">-</span></p>
+                <p class="tiempo">Tiempo: <span id="tiempo_np">-</span></p>
+            </div>
+
+            <div class="card-neon border-postfija">
+                <h4>Postfija</h4>
+                <p><b>Expresión:</b> <span id="postfija">-</span></p>
+                <p><b>Resultado:</b> <span id="res_postfija">-</span></p>
+                <p class="tiempo">Tiempo: <span id="tiempo_npo">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/main.js"></script>
+    <script src="src/bootstrap.js"></script>
+</body>
+
+</html>
